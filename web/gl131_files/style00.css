@@ -1,0 +1,23 @@
+<STYLE type="text/css">
+body {font-size:9pt; font-color: black; font-family: Arial}
+H1 {font-size:13pt; font-style: Arial; font-weight: bold; text-align: center}
+#h1 {font-size:13pt; font-style: Arial; font-weight: bold; text-align: center}
+#h5 {font-size:13pt; font-style: Arial; font-weight: bold; text-align: center}
+p {font-size:9pt; font-color: black; font-family: Arial}
+table, tr, td, ul {font-size:9pt; font-color: black; font-family: Arial}
+input, select, option {font-size: 9pt; font-family: Arial; }
+A {color: #00264E; font-size: 9pt; font-family: Arial; text-decoration: none; }
+A:visited {color: #00264E;}
+A:hover {color: #000099;}
+.just {text-align:justify;}
+.cent {text-align:center;}
+#epigraph {text-align:right;}
+#zag {font-size: 7pt; font-family: Helvetica, Arial; color: #A8B4C2;}
+#abz {color: #00264E;}
+#asbg {color: #CFD8E2;}
+
+.tfixed {table-layout: fixed;}
+#smallsp { word-spacing: 0.1em; }
+#title {font-size:6pt; color: white; font-family: Arial, Helvetica, MS Sans Serif; }
+#titleold {font-size:6pt; font-weight: bold; color: white; font-family: Arial; font-variant: small-caps; line-height: 25 %}
+</STYLE>

@@ -1,4 +1,4 @@
 #!/bin/bash
 
-bobo2.6 -p 81 -f boat.py
+bobo -p 80 -f boat.py
 

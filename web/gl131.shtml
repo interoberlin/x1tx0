@@ -1,0 +1,295 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="keywords" content="futaba,attack,sr,школа,дядьки,глайдера,авиамоделизм,моделизм,авиамодель,модель,авиа">
+<meta name="description" content="Схемотехника фирменных передатчиков - Futaba Attack-SR - Самодельный ВЧ-модуль для передатчика RC-аппаратуры - Школа дядьки Глайдера - SkyFlex Interactive">
+<title>Схемотехника фирменных передатчиков - Futaba Attack-SR - 
+Самодельный ВЧ-модуль для передатчика RC-аппаратуры - Школа дядьки 
+Глайдера - SkyFlex Interactive</title>
+<link rel="alternate" type="application/rss+xml" title="SkyFlex Interactive - Русский авиамодельный сайт" href="http://skyflex.air.ru/anons.xml">
+<link rel="SHORTCUT ICON" href="http://skyflex.air.ru/favicon.ico">
+<link rel="stylesheet" type="text/css" href="gl131_files/style00.css">
+<link rel="stylesheet" type="text/css" href="gl131_files/style03.css">
+</head>
+<body topmargin="0" leftmargin="0" bgcolor="#FFFFFF" link="#003366" vlink="#003366">
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr>
+<td cellpadding="2" bgcolor="#000000" valign="top" width="155">
+<!-- Menu -->
+<div class="spacer">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="captiontopleft"><img src="gl131_files/1.gif" alt="" style="display: block;" height="3" width="24"></td>
+<td class="captiontopmiddle"><img src="gl131_files/1.gif" alt="" style="display: block;" height="3" width="1"></td>
+<td class="captiontopright"><img src="gl131_files/1.gif" alt="" style="display: block;" height="3" width="11"></td>
+</tr>
+</tbody></table>
+
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="captionleft"><img src="gl131_files/1.gif" alt="" style="display: block;" height="18" width="24"></td>
+<td class="captionbar" style="white-space: nowrap;">Навигация</td>
+<td class="captionend"><img src="gl131_files/1.gif" alt="" style="display: block;" height="18" width="12"></td>
+<td class="captionmain"><img src="gl131_files/1.gif" alt="" style="display: block;" height="18" width="1"></td>
+<td class="captionright"><img src="gl131_files/1.gif" alt="" style="display: block;" height="18" width="11"></td>
+</tr>
+</tbody></table>
+
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="bodyleft"><img src="gl131_files/1.gif" alt="" style="display: block;" height="1" width="3"></td>
+<td class="bodymain">
+<a href="http://skyflex.air.ru/">Главная</a><br>
+<a href="http://skyflex.air.ru/arc.shtml">Архив выпусков</a><br>
+<a href="http://skyflex.air.ru/pages/glider/glider.shtml">Школа Глайдера</a><br>
+<a href="http://skyflex.air.ru/pages/site/articles.shtml">Статьи</a><br>
+<a href="http://skyflex.air.ru/pages/advices/advices.shtml">Советы моделисту</a><br>
+<a href="http://skyflex.air.ru/pages/site/files.shtml">Файловый архив</a><br>
+<a href="http://skyflex.air.ru/pages/resource/links.shtml">Ссылки</a><br>
+<a href="http://skyflex.air.ru/pages/site/map.shtml">Карта сайта</a><br>
+<a href="http://skyflex.air.ru/main.shtml#search">Поиск</a><br>
+</td><td class="bodyright"><img src="gl131_files/1.gif" alt="" style="display: block;" height="1" width="3"></td>
+</tr>
+</tbody></table>
+
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="bottomleft"><img src="gl131_files/1.gif" alt="" style="display: block;" height="9" width="10"></td>
+<td class="bottommain"><img src="gl131_files/1.gif" alt="" style="display: block;" height="9" width="1"></td>
+<td class="bottomright"><img src="gl131_files/1.gif" alt="" style="display: block;" height="9" width="10"></td>
+</tr>
+</tbody></table>
+</div>
+
+<!-- Statistics -->
+<div class="spacer">
+
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="captiontopleft"><img src="gl131_files/1.gif" alt="" style="display: block;" height="3" width="24"></td>
+<td class="captiontopmiddle"><img src="gl131_files/1.gif" alt="" style="display: block;" height="3" width="1"></td>
+<td class="captiontopright"><img src="gl131_files/1.gif" alt="" style="display: block;" height="3" width="11"></td>
+</tr>
+</tbody></table>
+
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="captionleft"><img src="gl131_files/1.gif" alt="" style="display: block;" height="18" width="24"></td>
+<td class="captionbar" style="white-space: nowrap;">Статистика</td>
+<td class="captionend"><img src="gl131_files/1.gif" alt="" style="display: block;" height="18" width="12"></td>
+<td class="captionmain"><img src="gl131_files/1.gif" alt="" style="display: block;" height="18" width="1"></td>
+<td class="captionright"><img src="gl131_files/1.gif" alt="" style="display: block;" height="18" width="11"></td>
+</tr>
+</tbody></table>
+
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="bodyleft"><img src="gl131_files/1.gif" alt="" style="display: block;" height="1" width="3"></td>
+<td class="bodymain" align="center">
+
+<div align="center">
+<!--TopList COUNTER--><a target="_top" href="http://skyflex.air.ru/cgi-bin/bsdcc/bsdcc.pl?205"><script language="JavaScript"><!--
+d=document;a='';a+=';r='+escape(top.document.referrer)
+js=10//--></script><script language="JavaScript1.1"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script><script language="JavaScript1.2"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script><script language="JavaScript1.3"><!--
+js=13//--></script><script language="JavaScript"><!--
+d.write('<img src="http://top.list.ru/counter'+
+'?id=117945;t=94;js='+js+a+';rand='+Math.random()+
+'" alt="TopList" '+ 'border=0 height=18 width=88>')
+if(js>11)d.write('<'+'!-- ')//--></script><img src="gl131_files/counter.gif" alt="TopList" border="0" height="18" width="88"><!-- <noscript><img
+src="http://top.list.ru/counter?js=na;id=117945;t=94"
+border=0 height=18 width=88
+alt="TopList"></noscript><script language="JavaScript"><!--
+if(js>11)d.write('--'+'>')//--></a><!--TopList COUNTER-->
+<br>
+</div>
+
+</td><td class="bodyright"><img src="gl131_files/1.gif" alt="" style="display: block;" height="1" width="3"></td>
+</tr>
+</tbody></table>
+
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="bottomleft"><img src="gl131_files/1.gif" alt="" style="display: block;" height="9" width="10"></td>
+<td class="bottommain"><img src="gl131_files/1.gif" alt="" style="display: block;" height="9" width="1"></td>
+<td class="bottomright"><img src="gl131_files/1.gif" alt="" style="display: block;" height="9" width="10"></td>
+</tr>
+</tbody></table>
+</div>
+
+
+<!-- Sponsors -->
+<div class="spacer">
+
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="captiontopleft"><img src="gl131_files/1.gif" alt="" style="display: block;" height="3" width="24"></td>
+<td class="captiontopmiddle"><img src="gl131_files/1.gif" alt="" style="display: block;" height="3" width="1"></td>
+<td class="captiontopright"><img src="gl131_files/1.gif" alt="" style="display: block;" height="3" width="11"></td>
+</tr>
+</tbody></table>
+
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="captionleft"><img src="gl131_files/1.gif" alt="" style="display: block;" height="18" width="24"></td>
+<td class="captionbar" style="white-space: nowrap;">Спонсор</td>
+<td class="captionend"><img src="gl131_files/1.gif" alt="" style="display: block;" height="18" width="12"></td>
+<td class="captionmain"><img src="gl131_files/1.gif" alt="" style="display: block;" height="18" width="1"></td>
+<td class="captionright"><img src="gl131_files/1.gif" alt="" style="display: block;" height="18" width="11"></td>
+</tr>
+</tbody></table>
+
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="bodyleft"><img src="gl131_files/1.gif" alt="" style="display: block;" height="1" width="3"></td>
+<td class="bodymain">
+
+<div align="center">
+<a href="http://skyflex.air.ru/cgi-bin/bsdcc/bsdcc.pl?203" target="_blank" title="Спонсирование и хостинг проекта осуществляет компания Зенон Н.С.П." onmouseover="top.window.status='Спонсирование и хостинг проекта осуществляет компания Зенон Н.С.П.'; return true" onmouseout="top.window.status=''; return true"><img src="gl131_files/hobby-2.gif" border="0"></a><br>
+<img src="gl131_files/1.gif" align="middle" border="0" height="3" width="1"><br>
+<a href="http://skyflex.air.ru/cgi-bin/bsdcc/bsdcc.pl?204" target="_blank" title="Участник проекта Hobby.ru" onmouseover="top.window.status='Участник проекта Hobby.ru'; return true" onmouseout="top.window.status=''; return true"><img src="gl131_files/hobby-14.gif" border="0"></a>
+</div>
+
+</td><td class="bodyright"><img src="gl131_files/1.gif" alt="" style="display: block;" height="1" width="3"></td>
+</tr>
+</tbody></table>
+
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="bottomleft"><img src="gl131_files/1.gif" alt="" style="display: block;" height="9" width="10"></td>
+<td class="bottommain"><img src="gl131_files/1.gif" alt="" style="display: block;" height="9" width="1"></td>
+<td class="bottomright"><img src="gl131_files/1.gif" alt="" style="display: block;" height="9" width="10"></td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+</td>
+<td background="gl131_files/manbg.gif" valign="top" width="7">
+</td>
+<td valign="top">
+
+
+<table border="0" cellpadding="0" cellspacing="2" width="600">
+<tbody><tr>
+	<td valign="top" width="480">
+	<table border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td align="right" bgcolor="#00264E" width="16"><img src="gl131_files/bcircleb.gif" height="10" width="10"></td>
+		<td bgcolor="#00264E" width="5">&nbsp;</td>
+		<td bgcolor="#00264E" width="233"><b><font id="zag">Самодельный ВЧ-модуль</font></b></td>
+		<td align="right" bgcolor="#00264E" width="220"><font id="zag"><b>| <a href="http://skyflex.air.ru/" id="zag">главная</a> | <a href="http://skyflex.air.ru/pages/glider/glider.shtml" id="zag">школа</a> | <a href="http://skyflex.air.ru/pages/site/map.shtml" id="zag">карта</a> | <a href="http://skyflex.air.ru/main.shtml#search" id="zag">поиск</a> |</b></font></td>
+		<td bgcolor="#00264E" width="6">&nbsp;</td>
+	</tr>
+     </tbody></table>
+	<table border="0" cellpadding="8" cellspacing="1" width="480">
+	<tbody><tr>
+		<td bgcolor="#CFD8E2" valign="top" width="480">
+<p class="just">Передатчик аппаратуры Futaba Attack-SR</p>
+<p class="just"></p><center><a onclick="window.open('','BIG_PICTURE','resizable=no,scrollbars=no, width=599,height=279')" href="http://skyflex.air.ru/images/glider/gl158.gif" target="BIG_PICTURE"><img src="gl131_files/gl158_thm.gif" border="0" height="134" width="300"></a></center><p></p>
+<p class="just">Аппаратура Attack-SR является одной из самых "младших" в
+ модельном ряде аппаратуры Futaba, и выпускается фирмой уже много лет. В
+ целом аппаратура очень проста, и на ней можно было бы не заострять 
+внимания. Привожу ее описание только для подтверждения того, что 
+"фирмачи" не часто напрягаются в процессе разработки новой 
+RC-аппаратуры, и обычно используют хорошо "обкатанную" схемотехнику. Вы 
+сами это поймете, прочитав в следующей части статьи описание "старшего" 
+брата Attack-SR (ВЧ-модуль FP-TQ-FM, которым комплектуются старшие 
+модели Futaba, начиная с FC-18 ). </p>
+<p class="just">Весь пульт Attack-SR, включая двухканальный 
+пропорциональный кодер, задающий ВЧ генератор, цепи FM-модулятора, цепи 
+стабилизации напряжения, а также его визуального (на светодиодной 
+линейке) и звукового (на "биппере") контроля, собран на 
+специализированной микросхеме FP2108T, даташит на которую, к сожалению, 
+мне так и не удалось найти в интернете. В розничную продажу эта 
+микросхема, насколько я знаю, также не поступает. Именно поэтому я не 
+стал приводить полную схему передатчика Attack-SR, ограничившись лишь ВЧ
+ частью, которая собрана на дискретных элементах. Схема приведена с 
+очень незначительными упрощениями цепей питания предоконечного и 
+выходного каскадов (точка соединения R5 и R7), которые в реальном 
+устройстве запитаны от внутреннего стабилизатора микросхемы FP2108T. 
+Схема практически "один в один" повторяет уже описанную схему 
+передатчика ИГВА. Для линеаризации выходного каскада на Т2 и 
+предотвращения паразитных возбуждений, каскад охвачен ООС (С9). </p>
+<p class="just">Стоит напомнить, что в ИГВА, Hitec и Futaba, используются одинаковые кварцевые резонаторы, которые могут быть взаимозаменяемыми.</p>
+			<ul id="abz">
+				<li><a href="http://skyflex.air.ru/pages/glider/gl125.shtml">Введение</a>
+				</li><li><a href="http://skyflex.air.ru/pages/glider/gl127.shtml">Схемотехника фирменных передатчиков - ИГВА</a>
+				</li><li><a href="http://skyflex.air.ru/pages/glider/gl129.shtml">Схемотехника фирменных передатчиков - Graupner JR 1440</a>
+				</li><li><a href="http://skyflex.air.ru/pages/glider/gl131.shtml">Схемотехника фирменных передатчиков - Futaba Attack-SR</a>
+				</li><li><a href="http://skyflex.air.ru/pages/glider/gl133.shtml">Описание сменного ВЧ-модуля Futaba FP-TQ-FM</a>
+				</li><li><a href="http://skyflex.air.ru/pages/glider/gl135.shtml">Схемотехника самодельного ВЧ-модуля</a>
+				</li><li><a href="http://skyflex.air.ru/pages/glider/gl137.shtml">Схема модулятора на микроконтроллере ATtiny15</a>
+			</li></ul>
+
+<ul id="abz">
+<li><a href="http://skyflex.air.ru/pages/glider/glider.shtml">Школа дядьки Глайдера</a>
+</li></ul>
+<p id="epigraph">Все права на статьи принадлежат  <a href="mailto:legato@mail.ru">И.В. Карпунину (aka Glider)</a>.</p>
+</td>
+</tr>
+</tbody></table>
+</td>
+     <td background="gl131_files/bg-right.gif" bgcolor="#004067" valign="top" width="132">
+
+     <table border="0" cellpadding="0" cellspacing="0" height="100%" width="132"><tbody><tr>
+     <td align="center" background="gl131_files/bg-right.gif" bgcolor="#004067" valign="top" width="132">
+	<img src="gl131_files/1.gif" align="middle" border="0" height="15" width="1"><br>
+	<a href="http://skyflex.air.ru/cgi-bin/teaser/ushkigo.pl?27" target="_parent" title="Модель гидроплана ICON A5 (2882)"><img src="gl131_files/27.gif" alt="Модель гидроплана ICON A5 (2882)" border="0" height="60" width="108"></a><br><img src="gl131_files/1.gif" border="0" height="8"><br>
+<a href="http://skyflex.air.ru/cgi-bin/teaser/ushkigo.pl?19" target="_parent" title="Прототип самого маленького летательного робота uFR (Micro Flying Robot) от Seiko Epson (3364)"><img src="gl131_files/19.gif" alt="Прототип самого маленького летательного робота uFR (Micro Flying Robot) от Seiko Epson (3364)" border="0" height="60" width="108"></a><br><img src="gl131_files/1.gif" border="0" height="8"><br>
+<a href="http://skyflex.air.ru/cgi-bin/teaser/ushkigo.pl?25" target="_parent" title="Обзор пилотажного самолета Katana из потолочной плитки (4228)"><img src="gl131_files/25.gif" alt="Обзор пилотажного самолета Katana из потолочной плитки (4228)" border="0" height="60" width="108"></a><br><img src="gl131_files/1.gif" border="0" height="8"><br>
+<a href="http://skyflex.air.ru/cgi-bin/teaser/ushkigo.pl?102" target="_parent" title="Самодельный радиокарбюратор (2898)"><img src="gl131_files/102.gif" alt="Самодельный радиокарбюратор (2898)" border="0" height="60" width="108"></a><br><img src="gl131_files/1.gif" border="0" height="8"><br>
+<a href="http://skyflex.air.ru/cgi-bin/teaser/ushkigo.pl?208" target="_parent" title="Модельная электроника своими руками - тахометр (1613)"><img src="gl131_files/208.gif" alt="Модельная электроника своими руками - тахометр (1613)" border="0" height="60" width="108"></a><br><img src="gl131_files/1.gif" border="0" height="8"><br>
+<a href="http://skyflex.air.ru/cgi-bin/teaser/ushkigo.pl?308" target="_parent" title="Крепеж для моделей (953)"><img src="gl131_files/308.gif" alt="Крепеж для моделей (953)" border="0" height="60" width="108"></a><br><img src="gl131_files/1.gif" border="0" height="8"><br>
+	
+	<img src="gl131_files/1.gif" align="middle" border="0" height="10" width="1"><br>
+	<script type="text/javascript"><!--
+google_ad_client = "ca-pub-2742036594727737";
+/* SFI Sky 2 */
+google_ad_slot = "5415033393";
+google_ad_width = 120;
+google_ad_height = 240;
+//-->
+</script>
+<script type="text/javascript" src="gl131_files/show_ads.js">
+</script>	
+	 </td>
+	 </tr>
+     </tbody></table> 
+     </td>
+    </tr>
+</tbody></table>
+<hr id="abz" align="left" noshade="noshade" size="1" width="612">
+<table border="0" cellpadding="0" cellspacing="0" width="612">
+<tbody><tr>
+<td align="center">
+ Золотое <a href="http://www.iteza.ru/collection/kolco-s-brilliantom" target="_blank">кольцо с бриллиантом</a> от известных дизайнеров по низким ценам. Итеза. 
+<hr id="abz" align="left" noshade="noshade" size="1" width="612">
+<script src="gl131_files/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2311140-1";
+urchinTracker();
+</script>
+</td>
+</tr>
+<tr>
+<td align="center">
+Спонсирование и хостинг проекта осуществляет компания <font id="zag">"</font><a href="http://skyflex.air.ru/cgi-bin/bsdcc/bsdcc.pl?203" target="_blank" title="Спонсирование и хостинг проекта осуществляет компания Зенон Н.С.П." onmouseover="top.window.status='Спонсирование и хостинг проекта осуществляет компания Зенон Н.С.П.'; return true" onmouseout="top.window.status=''; return true">Зенон Н.С.П.</a><font id="zag">"</font><br>
+Рекомендуемое разрешение - 800х600 и выше<br>
+Copyright © <a href="http://skyflex.air.ru/" target="_top">SkyFlex Interactive 1997-2013</a><br>
+E-Mail: <a href="mailto:skyflex@narod.ru">
+webmaster</a>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+</body></html>

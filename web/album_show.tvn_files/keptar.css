@@ -1,0 +1,180 @@
+body, td, th, dd, dt, h1, h2, h3, h4, h5, h6, p, ol, ul, li {
+  font-family: helvetica,arial,sans-serif;
+}
+body, small {
+  font-size: 8pt;
+}
+td, th {
+  font-size: 10pt;
+}
+textarea, pre { font-family: fixed; font-size: 9pt; }
+
+a { text-decoration: none; } a:hover { cursor: pointer; text-decoration: underline; color: #ff0000; 
+
+}
+ .button {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+        color: #333300;
+	border-color: #0000ff;
+	BORDER:1px solid #000000;
+	font-weight: bold;
+	text-align: center;
+	BACKGROUND-IMAGE:url(http://n.images.www.tvn.hu/tvn/kepek/form_bg.gif);
+        cursor:hand;	
+
+}
+
+.button5 {
+        background-color: #DEF0FF;
+        font-family: verdana,'MS Sans Serif',arial,verdana,helvetica;
+        font-size: 10px;
+        font-weight: bold;
+        color: #333300;
+        cursor:hand;
+        border-color:#314FA5;
+        border-style:solid;
+        border-width:1px;
+        position:relative; left:-1px; top:-1px;
+}
+
+.button6 {
+        background-color: #ffff00;
+        font-family: verdana,arial,verdana,helvetica;
+        font-size: 12px;
+        font-weight: bold;
+        color: #000000;
+        cursor:hand;
+        border-color:#ff0000;
+        border-style:solid;
+        border-width:1px;
+        position:relative; left:-1px; top:-1px;
+}
+
+
+
+
+.button2 { background: #ff9900; border-style: solid; border-color: 
+#800000; font: 11px Verdana, Arial, Helvetica, sans-serif; color: #333 }
+.msg A:Hover {
+	background-color: transparent;
+	color: firebrick;
+	text-decoration: underline;
+}
+
+.border {
+  margin-bottom: 10px;
+  border: 1px solid black;
+  background-color: #c6e2ff;
+  vertical-align: middle;
+}
+
+.D11 {
+  POSITION:absolute;
+  VISIBILITY:hidden;
+  Z-INDEX:200;
+}
+
+.borderread {
+  margin-bottom: 2px;
+  border: 1px solid black;
+  vertical-align: middle;
+}
+
+.borderwhitehater {
+  margin-bottom: 2px;
+  border: 1px solid black;
+  background-color: #ffffff;
+  vertical-align: middle;
+}
+
+.bordernohater {
+  margin-bottom: 10px;
+  border: 1px solid #1f54b8;
+  vertical-align: top;
+}
+
+.bordertopalbum {
+  margin-bottom: 10px;
+  border: 1px solid #1f54b8;
+  vertical-align: top;
+}
+
+.bordernaptar {
+  border: 1px solid black;
+}
+
+.bordernaptarpiros {
+  border: 1px solid red;      
+  background-color: #FCDEDE;
+}
+
+
+.bordertabla {
+  margin-bottom: 10px;
+  border: 1px solid #FCC01E;
+  background-color: #FFF6DB;
+  vertical-align: middle;
+}
+
+.bordertabla2 {
+  margin-bottom: 10px;
+  border: 1px solid #B0D49F;
+  background-color: #FEEFC2;
+  vertical-align: middle;
+}
+
+.bordertabla3 {
+  margin-bottom: 10px;
+  border: 1px solid #1F54B8;
+  background-color: #c6e2ff;
+  vertical-align: middle;
+}
+
+.bordertabla4_sent {
+  margin-bottom: 1px;
+  border: 1px solid #B0D49F;
+  background-color: #F7FFEA;
+  vertical-align: middle;
+}
+
+.float {
+
+ margin-bottom: 0px;
+
+}
+
+.form{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #09021E;
+	background-color: #ffffff;
+	font-weight: bold
+}
+.form2{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #367aba;
+	background-color: #ffffff;
+	font-weight: bold
+}
+	
+.form4 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        color: #133572;
+        border: 1px solid #8FB0CF;
+        background-image: url(http://n.images.www.tvn.hu/tvn/kepek/form_bg.gif);
+}
+
+.form_editor {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: #133572;
+        line-height: 1.4;
+        border: 1px solid #8FB0CF;
+        background-image: url(http://n.images.www.tvn.hu/tvn/kepek/form_bg.gif);
+}
+

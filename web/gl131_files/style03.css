@@ -1,0 +1,15 @@
+.captiontopleft{ width: 24px; background-image: url(/images/topleft.png); }
+.captiontopmiddle{ width: 100%; background-repeat: repeat-x; background-image: url(/images/top.png); }
+.captiontopright{ width: 11px; background-image: url(/images/topright.png); }
+.captionleft{ width: 24px; background-image: url(/images/capleft.png); }
+.captionbar{ background-repeat: repeat-x; padding-right:10px; font-size: 10px; color: #fff; font-family: verdana, tahoma, arial, sans-serif; background-image: url(/images/capdark.png);}
+.captionend{ width: 12px; background-image: url(/images/captransition.png); }
+.captionmain{ width: 100%; background-repeat: repeat-x; background-image: url(/images/caplight.png); }
+.captionright{ width: 11px; background-image: url(/images/capright.png); }
+.bodyleft{ width: 3px; background-repeat: repeat-y; background-image: url(/images/left.png); }
+.bodymain{ width: 100%; background: #CFD8E2; padding: 4px 5px 5px 4px; font-size: 9pt; color: #000; font-family: arial; vertical-align:top; }
+.bodyright{ width: 3px; background-repeat: repeat-y; background-image: url(/images/right.png); }
+.bottomleft{ width: 10px; background-image: url(/images/bottomleft.png); }
+.bottommain{ width: 100%; background-repeat: repeat-x; background-image: url(/images/bottom.png);}
+.bottomright{ width: 10px; background-image: url(/images/bottomright.png); }
+.spacer{ padding: 6px 0px 6px 0px;}
