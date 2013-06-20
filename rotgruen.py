@@ -1,5 +1,10 @@
 #!/usr/bin/python
 
+#
+# http://wiringpi.com/pins/
+# http://www.hobbytronics.co.uk/raspberry-pi-gpio-pinout
+#
+
 import RPi.GPIO as GPIO
 from RPi.GPIO import OUT
 from time import sleep
@@ -38,15 +43,17 @@ def setvalue(v):
 	elif v < 0:
 		switch(rot[:v*-1], True)
 
-def test2():
+def test2(debug=False):
 	d=0.02
 	for i in range(11):
 		setvalue(i-5)
-		print i-5
+		if debug:
+			print i-5
 		sleep(d)
 	for i in range(11):
 		setvalue(5-i)
-		print 5-i
+		if debug:
+			print 5-i
 		sleep(d)
 
 for i in range(15):
