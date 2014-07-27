@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://makeithappend.org/archives/679 -->
+<html lang="en-US" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Life With Technology | PPM/Spektrum Arduino R/C Transmitter Box</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://makeithappend.org/xmlrpc.php">
+
+
+<link rel="alternate" type="application/rss+xml" title="Life With Technology » Feed" href="http://makeithappend.org/feed">
+<link rel="alternate" type="application/rss+xml" title="Life With Technology » Comments Feed" href="http://makeithappend.org/comments/feed">
+<link rel="alternate" type="application/rss+xml" title="Life With Technology » PPM/Spektrum Arduino R/C Transmitter Box Comments Feed" href="http://makeithappend.org/archives/679/feed">
+<link rel="stylesheet" id="flags-widget-css" href="./PPM Spektrum Arduino Box_files/flags-widget.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpfb-css" href="./PPM Spektrum Arduino Box_files/wp-filebase.css" type="text/css" media="all">
+<link rel="stylesheet" id="timeline-css-css" href="./PPM Spektrum Arduino Box_files/timeline.css" type="text/css" media="all">
+<link rel="stylesheet" id="customScroll-css-css" href="./PPM Spektrum Arduino Box_files/jquery.mCustomScrollbar.css" type="text/css" media="all">
+<link rel="stylesheet" id="prettyPhoto-css-css" href="./PPM Spektrum Arduino Box_files/prettyPhoto.css" type="text/css" media="all">
+<link rel="stylesheet" id="styles-css" href="./PPM Spektrum Arduino Box_files/templates.css" type="text/css" media="all">
+<link rel="stylesheet" id="magazino_style-css" href="./PPM Spektrum Arduino Box_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery.lightbox.min.css-css" href="./PPM Spektrum Arduino Box_files/lightbox.min.css" type="text/css" media="all">
+<script type="text/javascript" src="./PPM Spektrum Arduino Box_files/flags-widget.js"></script>
+<script type="text/javascript" src="./PPM Spektrum Arduino Box_files/jquery.js"></script>
+<script type="text/javascript" src="./PPM Spektrum Arduino Box_files/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="./PPM Spektrum Arduino Box_files/jquery.timeline.js"></script>
+<script type="text/javascript" src="./PPM Spektrum Arduino Box_files/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="./PPM Spektrum Arduino Box_files/jquery.mCustomScrollbar.min.js"></script>
+<script type="text/javascript" src="./PPM Spektrum Arduino Box_files/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./PPM Spektrum Arduino Box_files/rollover.js"></script>
+<script type="text/javascript" src="./PPM Spektrum Arduino Box_files/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="./PPM Spektrum Arduino Box_files/modernizr-2.6.2.min.js"></script>
+<script type="text/javascript" src="./PPM Spektrum Arduino Box_files/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="./PPM Spektrum Arduino Box_files/jquery.cycle2.tile.min.js"></script>
+<script type="text/javascript" src="./PPM Spektrum Arduino Box_files/jquery.cycle2.scrollVert.min.js"></script>
+<script type="text/javascript" src="./PPM Spektrum Arduino Box_files/scripts.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://makeithappend.org/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://makeithappend.org/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Mac AntiHum – Fadeout The Hum" href="http://makeithappend.org/archives/631">
+<link rel="next" title="Tutorial: Hardware Anonymization" href="http://makeithappend.org/archives/926">
+<link rel="canonical" href="./PPM Spektrum Arduino Box_files/PPM Spektrum Arduino Box.html">
+<link rel="shortlink" href="http://makeithappend.org/?p=679">
+<script type="text/javascript" src="./PPM Spektrum Arduino Box_files/anti-captcha-0.3.js.php"></script>
+	<style>
+		a, a:visited,
+		#site-title a,
+		nav[role=navigation] .menu ul li a:hover,
+		nav[role=navigation] .menu ul li.current-menu-item a, 
+		.nav ul li.current_page_item a, 
+		nav[role=navigation] .menu ul li.current_page_item a,
+		#sidebar .widget-title,
+		.slides .slide-title,
+		.commentlist .vcard cite.fn a,
+		.commentlist .comment-meta a:hover,
+		.post_content ul li:before,
+		.post_content ol li:before,
+		.colortxt,
+		.commentlist .bypostauthor > article > footer > .vcard cite.fn,
+		.cycle-pager span.cycle-pager-active { 
+			color: #c6b42b;
+		}
+		
+		#container,
+		#sidebar {
+			border-top: 2px solid #c6b42b;
+		}
+		
+		
+		#social-media a,
+		#search-icon,
+		.go-button a,
+		.go-button a:visited,
+		.grnbar,
+		.pagination a:hover,
+		.pagination .current,
+		#respond #submit {
+			background-color: #c6b42b;
+		}
+		
+		.post_content pre { 
+			border-left-color: #c6b42b;
+		}
+	</style>
+<!-- All in one Favicon 4.3 --><link rel="icon" href="http://makeithappend.org/wp-content/uploads/2013/03/berzerker2.png" type="image/png">
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #f7f5ed; }
+</style>
+</head>
+
+<body class="single single-post postid-679 single-format-standard custom-background single-author">
+
+
+<div id="container">
+	
+    <div id="search-box-wrap">
+        <div id="search-box">
+           <div id="close-x">x</div>
+           <form role="search" method="get" id="searchform" action="http://makeithappend.org/">
+	<div><label class="screen-reader-text" for="s">Search for:</label>
+	<input type="text" value="" name="s" id="s">
+	<input type="submit" id="searchsubmit" value="Search">
+	</div>
+	</form>        </div>
+    </div>
+
+	<header id="branding" role="banner">
+      <div id="inner-header" class="clearfix">
+		<hgroup id="site-heading">
+        	            <div id="site-logo"><a href="http://makeithappend.org/" title="Life With Technology" rel="home"><img src="./PPM Spektrum Arduino Box_files/logoanimated1.gif" alt="Life With Technology"></a></div>
+            		</hgroup>
+        
+
+        <div id="social-media" class="clearfix">
+        
+        	            
+            			
+                        
+                        
+                        
+			            
+            <div id="search-icon"></div>
+            
+            
+        </div>
+        
+        </div>
+
+
+          <div class="flag-icons-outer" style="0">
+            <div class="flag-icons-inner" style="left:-52px;top:-67px;">
+              <div style="0"><a href="./PPM Spektrum Arduino Box_files/PPM Spektrum Arduino Box.html"><img src="./PPM Spektrum Arduino Box_files/GB.png" width="18" height="16" title="United Kingdom" alt="United Kingdom"></a></div><div style="0"><a href="http://makeithappend.org/de/archives/679"><img src="./PPM Spektrum Arduino Box_files/DE.png" width="18" height="16" title="Germany" alt="Germany"></a></div>            </div>
+          </div>
+	
+        
+
+		<nav id="access" class="clearfix" role="navigation">
+			<h1 class="assistive-text section-heading">Main menu</h1>
+			<div class="skip-link screen-reader-text"><a href="http://makeithappend.org/archives/679#content" title="Skip to content">Skip to content</a></div>
+			<div class="menu"><div id="menu-icon">Menu</div><ul><li><a href="http://makeithappend.org/" title="Home">Home</a></li><li class="page_item page-item-254"><a href="http://makeithappend.org/mytech">My Tech</a></li><li class="page_item page-item-2"><a href="http://makeithappend.org/technews">Tech News (RSS)</a><ul class="children"><li class="page_item page-item-44"><a href="http://makeithappend.org/technews/itnews">IT News</a></li><li class="page_item page-item-360"><a href="http://makeithappend.org/technews/apple-news">APPLE NEWS</a></li><li class="page_item page-item-220"><a href="http://makeithappend.org/technews/gadget-news">Gadget News</a></li><li class="page_item page-item-204"><a href="http://makeithappend.org/technews/robot-news">ROBOT News</a></li></ul></li><li class="page_item page-item-532"><a href="http://makeithappend.org/tech-world">TECH MEDIA</a><ul class="children"><li class="page_item page-item-346"><a href="http://makeithappend.org/tech-world/tech-videos">TECH VIDEOS</a></li><li class="page_item page-item-502"><a href="http://makeithappend.org/tech-world/tech-cinema">TECH CINEMA</a></li></ul></li><li class="page_item page-item-217"><a href="http://makeithappend.org/about">About Me</a></li><li class="page_item page-item-427"><a href="http://makeithappend.org/impress">Impress</a></li><li class="page_item page-item-604"><a href="http://makeithappend.org/contact">Contact</a></li></ul></div>
+					</nav><!-- #access -->
+        
+
+      
+
+	</header><!-- #branding -->
+    <div id="content" class="clearfix">
+        
+        <div id="main" class="clearfix" role="main">
+
+			
+				<div class="single-meta">
+	<div><span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="http://makeithappend.org/archives/author/admin" title="View all posts by Matthias" rel="author">Matthias</a></span></div>
+    
+    <div><span class="sep">on </span><a href="./PPM Spektrum Arduino Box_files/PPM Spektrum Arduino Box.html" title="19:22" rel="bookmark"><time class="entry-date" datetime="2013-05-28T19:22:03+00:00">28/05/2013</time></a></div>
+    
+    <div>under <a href="http://makeithappend.org/archives/category/uncategorized" title="View all posts in Uncategorized" rel="tag">Uncategorized</a>    </div>
+    
+    <div>tagged <a href="http://makeithappend.org/archives/tag/12" rel="tag">12</a>, <a href="http://makeithappend.org/archives/tag/16" rel="tag">16</a>, <a href="http://makeithappend.org/archives/tag/20" rel="tag">20</a>, <a href="http://makeithappend.org/archives/tag/amtx11" rel="tag">amtx11</a>, <a href="http://makeithappend.org/archives/tag/beast" rel="tag">Beast</a>, <a href="http://makeithappend.org/archives/tag/box" rel="tag">box</a>, <a href="http://makeithappend.org/archives/tag/dx6" rel="tag">dx6</a>, <a href="http://makeithappend.org/archives/tag/dx7" rel="tag">dx7</a>, <a href="http://makeithappend.org/archives/tag/dx8" rel="tag">dx8</a>, <a href="http://makeithappend.org/archives/tag/frsky" rel="tag">frsky</a>, <a href="http://makeithappend.org/archives/tag/futaba" rel="tag">futaba</a>, <a href="http://makeithappend.org/archives/tag/graupner" rel="tag">graupner</a>, <a href="http://makeithappend.org/archives/tag/mcpx" rel="tag">mCPX</a>, <a href="http://makeithappend.org/archives/tag/mlp4dsm" rel="tag">MLP4DSM</a>, <a href="http://makeithappend.org/archives/tag/modul" rel="tag">modul</a>, <a href="http://makeithappend.org/archives/tag/mqx" rel="tag">mQX</a>, <a href="http://makeithappend.org/archives/tag/mtx" rel="tag">mtx</a>, <a href="http://makeithappend.org/archives/tag/mx" rel="tag">mx</a>, <a href="http://makeithappend.org/archives/tag/ppm" rel="tag">ppm</a>, <a href="http://makeithappend.org/archives/tag/spektrum" rel="tag">spektrum</a>, <a href="http://makeithappend.org/archives/tag/x10emtx" rel="tag">x10emtx</a>, <a href="http://makeithappend.org/archives/tag/x1tx0" rel="tag">x1tx0</a>, <a href="http://makeithappend.org/archives/tag/x1txn" rel="tag">x1txn</a>    </div>
+    
+    <div>∞ <a href="./PPM Spektrum Arduino Box_files/PPM Spektrum Arduino Box.html" title="Permalink to PPM/Spektrum Arduino R/C Transmitter Box" rel="bookmark">Permalink</a>    </div>
+    
+    <div>
+    	    </div>
+</div>
+
+<article id="post-679" class="post-679 post type-post status-publish format-standard hentry category-uncategorized tag-12 tag-16 tag-20 tag-amtx11 tag-beast tag-box tag-dx6 tag-dx7 tag-dx8 tag-frsky tag-futaba tag-graupner tag-mcpx tag-mlp4dsm tag-modul tag-mqx tag-mtx tag-mx tag-ppm tag-spektrum tag-x10emtx tag-x1tx0 tag-x1txn single-pad">
+	<header class="entry-header">
+		<h1 class="entry-title">PPM/Spektrum Arduino R/C Transmitter Box</h1>
+        <div class="entry-meta mobile-meta">
+			<span class="sep">Posted on </span><a href="./PPM Spektrum Arduino Box_files/PPM Spektrum Arduino Box.html" title="19:22" rel="bookmark"><time class="entry-date" datetime="2013-05-28T19:22:03+00:00">28/05/2013</time></a><span class="byline"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="http://makeithappend.org/archives/author/admin" title="View all posts by Matthias" rel="author">Matthias</a></span></span>		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+	<div class="entry-content post_content">
+		<p>I wanted to fly my mQX / mCPX V2 / UMX Beast 3D with my Graupner MX-12 Hott, so&nbsp;I did some research on the internet to find a solution for my wish.&nbsp;There are a few approaches,&nbsp;but these do not operate satisfactorily.</p>
+<p>All solutions are working with the Arduino Pro Mini and a Baud Rate of 125000, but this is a problem for some modules.&nbsp;Also some info’s about the DSM2 protocol are incomplete or wrong. So I’ve done my own research about the DSM protocol:</p>
+<p><strong>DSM Header Byte 00:</strong></p>
+<p>bit 7 (0×80 / 128) : 1 =&gt; Bind<br>
+bit 6 (0×40 / 64) : 1 =&gt; Extendend Transmitter Range (US) – Attention! this needs more than 50mA (Arduino Micro), maybe more than 150mA (Arduino Pro Mini). For this you can use a small “Pololu 3.3V 300mA Step-Down” Voltage Regulator: D24V3F3)<br>
+bit 5 (0×20 / 32) : 1 =&gt; Range Test<br>
+bit 4 (0×10 / 16) : 1 =&gt; EU Freq, 0 =&gt; France Freq (France = no DSMX!) – this needs ~30mA (you can use the most Arduino Board for this EU/France Range Modes)<br>
+bit 3 (0×08 / 8) : 1 =&gt; DSMX, 0 =&gt; DSM2<br>
+bit 2 (0×04 / 4) : -<br>
+bit 1 (0×02 / 2) : -<br>
+bit 0 (0×01 / 1) : Type: 0 =&gt; Acro (Plane), 1 =&gt; Heli</p>
+<p><strong>DSM Header Byte 01:</strong></p>
+<p>0×00 = Mode 1 (Gas – right side)<br>
+0×01 = Mode 2 (Gas – left side)<br>
+.<br>
+0×07 = Mode 8<br>
+0×08 = Mode 9 / Heli (Header Byte 00: bit 0 =&gt; 1)<br>
+0×09 = Mode 10 / Heli (Header Byte 00: bit 0 =&gt; 1)</p>
+<p>&nbsp;</p>
+<p><strong>Additional problems:</strong></p>
+<p>- Some new X10EMTX (Jun/2013) are not working with the tricky Baud Rate of 125000 from a MLP4DSM Remote Control (you need 130000-137000)<br>
+- The binding procedure is a little bit strange and sometimes not working<br>
+- Most of the solutions are not sending in 22ms frames<br>
+- There is no Arduino Sketch especifically for my Graupner MX-12 Hott</p>
+<p>So it is not surprising that I have to build a new solution from scratch.</p>
+<p>&nbsp;</p>
+<p><strong>My Solution:</strong></p>
+<p>- Arduino Micro 32u4/16Mhz for the Baud Rate problem (also no FTDI USB Interface is required)<br>
+- New Sketch from scratch<br>
+- New easy binding (without power on/off and without a&nbsp;certain sequence)<br>
+- Sending data in 22ms frames<br>
+- Graupner MX-12 Hott&nbsp;compatible<br>
+- All what you need is: a&nbsp;Mini Breadboard, 1 Transistor, 4 Resistors, 1 LED, 10 Wires, and the DSM2 Transmitter board (X10EMTX) of your Blade mQX transmitter (MLP4DSM) or a X1TX0 (DX6i/DX4e AMTX11) board from a DX6i/DX4e Transmitter</p>
+
+		<style type="text/css">
+			#gallery-1 {
+				margin: auto;
+			}
+			#gallery-1 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 25%;
+			}
+			#gallery-1 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-1 .gallery-caption {
+				margin-left: 0;
+			}
+		</style>
+		<!-- see gallery_shortcode() in wp-includes/media.php -->
+		<div id="gallery-1" class="gallery galleryid-679 gallery-columns-4 gallery-size-thumbnail"><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/Arduino_Micro_Breadboard.png" title="Arduino Micro (mQX X10EMTX)" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/Arduino_Micro_Breadboard-150x150.png" class="attachment-thumbnail" alt="Arduino Micro (mQX X10EMTX)"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Arduino Micro (mQX X10EMTX)
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/Arduino_Mini_Breadboard.png" title="Arduino  Mini Pro 3.3v 8Mhz (mQX X10EMTX)" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/Arduino_Mini_Breadboard-150x150.png" class="attachment-thumbnail" alt="Arduino Mini Pro 3.3v 8Mhz (mQX X10EMTX)"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Arduino  Mini Pro 3.3v 8Mhz (mQX X10EMTX)
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130604_102610.jpg" title="Build in X10EMTX inside a Graupner MX-12 Hott" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130604_102610-150x150.jpg" class="attachment-thumbnail" alt="Build in X10EMTX inside a Graupner MX-12 Hott"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Build in X10EMTX inside a Graupner MX-12 Hott
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/blade_remote.png" title="Blade mQX Remote Control" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/blade_remote-150x150.png" class="attachment-thumbnail" alt="Blade mQX Remote Control"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Blade mQX Remote Control
+				</dd></dl><br style="clear: both"><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130518_092319.jpg" title="Blade mQX MLP4DSM (X10EMTX)" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130518_092319-150x150.jpg" class="attachment-thumbnail" alt="Blade mQX MLP4DSM (X10EMTX)"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Blade mQX MLP4DSM (X10EMTX)
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130518_092535.jpg" title="Blade mQX MLP4DSM (X10EMTX)" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130518_092535-150x150.jpg" class="attachment-thumbnail" alt="Blade mQX MLP4DSM (X10EMTX)"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Blade mQX MLP4DSM (X10EMTX)
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130527_221850.jpg" title="Blade X10EMTX" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130527_221850-150x150.jpg" class="attachment-thumbnail" alt="Blade X10EMTX"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Blade X10EMTX
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130527_221303.jpg" title="Arduino Micro" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130527_221303-150x150.jpg" class="attachment-thumbnail" alt="Arduino Micro"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Arduino Micro
+				</dd></dl><br style="clear: both"><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130527_221632.jpg" title="Connected" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130527_221632-150x150.jpg" class="attachment-thumbnail" alt="Connected"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Connected
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130527_234418.jpg" title="MX-12 5V + DSC" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130527_234418-150x150.jpg" class="attachment-thumbnail" alt="MX-12 5V + DSC"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				MX-12 5V + DSC
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130527_234521.jpg" title="DSC Mono Jack" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130527_234521-150x150.jpg" class="attachment-thumbnail" alt="DSC Mono Jack"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				DSC Mono Jack
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130527_221426.jpg" title="Arduino Micro (X10EMTX)" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130527_221426-150x150.jpg" class="attachment-thumbnail" alt="Arduino Micro (X10EMTX)"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Arduino Micro (X10EMTX)
+				</dd></dl><br style="clear: both"><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130528_231605.jpg" title="Arduino Pro Mini 3.3V 8Mhz Arduino Micro (X10EMTX)" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130528_231605-150x150.jpg" class="attachment-thumbnail" alt="Arduino Pro Mini 3.3V 8Mhz Arduino Micro (X10EMTX)"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Arduino Pro Mini 3.3V 8Mhz Arduino Micro (X10EMTX)
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130528_231703.jpg" title="IMG_20130528_231703" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130528_231703-150x150.jpg" class="attachment-thumbnail" alt="Boxes &amp; Arduino&#39;s"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Boxes &amp; Arduino’s
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130528_231903.jpg" title="IMG_20130528_231903" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130528_231903-150x150.jpg" class="attachment-thumbnail" alt="Arduino&#39;s in the boxes"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Arduino’s in the boxes
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130604_102356.jpg" title="Build in X1XT0" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130604_102356-150x150.jpg" class="attachment-thumbnail" alt="Build in X1XT0"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Build in X1XT0
+				</dd></dl><br style="clear: both"><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/Arduino_Micro_Breadboard_DX6i6.png" title="Arduino Micro (DX6i X1TX0)" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/Arduino_Micro_Breadboard_DX6i6-150x150.png" class="attachment-thumbnail" alt="Arduino Micro (DX6i X1TX0)"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Arduino Micro (DX6i X1TX0)
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/Arduino_Mini_Breadboard_DX6i1.png" title="Arduino Pro Mini 3.3V 8Mhz (DX6i X1TX0)" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/Arduino_Mini_Breadboard_DX6i1-150x150.png" class="attachment-thumbnail" alt="Arduino Pro Mini 3.3V 8Mhz (DX6i X1TX0)"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Arduino Pro Mini 3.3V 8Mhz (DX6i X1TX0)
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130604_111915.jpg" title="DX6i" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130604_111915-150x150.jpg" class="attachment-thumbnail" alt="DX6i"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				DX6i
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130602_170527.jpg" title="IMG_20130602_170527" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130602_170527-150x150.jpg" class="attachment-thumbnail" alt="DX6i Inside (X1TX0)"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				DX6i Inside (X1TX0)
+				</dd></dl><br style="clear: both"><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/AMTX11_X1TX0_Modul.png" title="DX6i X1TX0 Board" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/AMTX11_X1TX0_Modul-150x150.png" class="attachment-thumbnail" alt="DX6i X1TX0 Board"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				DX6i X1TX0 Board
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130603_0437352.jpg" title="Arduino Micro Arduino Pro Mini 3.3V 8Mhz (DX6i X1TX0)" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130603_0437352-150x150.jpg" class="attachment-thumbnail" alt="Arduino Micro Arduino Pro Mini 3.3V 8Mhz (DX6i X1TX0)"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Arduino Micro Arduino Pro Mini 3.3V 8Mhz (DX6i X1TX0)
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/DX6i_Breadboard.png" title="Arduino Pro Mini 3.3V + DX6i X1TX0 Board" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/DX6i_Breadboard-150x150.png" class="attachment-thumbnail" alt="Arduino Pro Mini 3.3V + DX6i X1TX0 Board"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Arduino Pro Mini 3.3V + DX6i X1TX0 Board
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/Arduino_Micro_Schaltplan.png" title="Arduino Micro Circuit diagram" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/Arduino_Micro_Schaltplan-150x150.png" class="attachment-thumbnail" alt="Arduino Micro Circuit diagram"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Arduino Micro Circuit diagram
+				</dd></dl><br style="clear: both"><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/Arduino_Pro_Mini_Schaltplan.png" title="Arduino Pro Mini Circuit diagram" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/Arduino_Pro_Mini_Schaltplan-150x150.png" class="attachment-thumbnail" alt="Arduino Pro Mini Circuit diagram"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Arduino Pro Mini Circuit diagram
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130610_230842.jpg" title="Build in X10EMTX + X1TX0" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130610_230842-150x150.jpg" class="attachment-thumbnail" alt="Build in X10EMTX + X1TX0"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Build in X10EMTX + X1TX0
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130610_231335.jpg" title="Inside the MX 12 Hott" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130610_231335-150x150.jpg" class="attachment-thumbnail" alt="Inside the MX 12 Hott"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Inside the MX 12 Hott
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130610_231430.jpg" title="X10EMTX + X1TX0 Build in" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130610_231430-150x150.jpg" class="attachment-thumbnail" alt="X10EMTX + X1TX0 Build in"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				X10EMTX + X1TX0 Build in
+				</dd></dl><br style="clear: both"><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130610_232146.jpg" title="Removable X10EMTX + X1TX0 Modules" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130610_232146-150x150.jpg" class="attachment-thumbnail" alt="Removable X10EMTX + X1TX0 Modules"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Removable X10EMTX + X1TX0 Modules
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130610_232056.jpg" title="IMG_20130610_232056" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130610_232056-150x150.jpg" class="attachment-thumbnail" alt="Plug &amp; Play Arduino"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Plug &amp; Play Arduino
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130610_232606.jpg" title="Removed something" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130610_232606-150x150.jpg" class="attachment-thumbnail" alt="Removed something"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Removed something
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130610_231852.jpg" title="Backside" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130610_231852-150x150.jpg" class="attachment-thumbnail" alt="Backside"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Backside
+				</dd></dl><br style="clear: both"><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130610_231914.jpg" title="IMGA_20130610_231914" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130610_231914-150x150.jpg" class="attachment-thumbnail" alt="Soldered"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Soldered
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130610_231407.jpg" title="" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130610_231407-150x150.jpg" class="attachment-thumbnail" alt="DSC Connector Removed, soldered a bridge at Pin 3-4 on the back. USB/EAR Board done under the HF modules"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				DSC Connector Removed, soldered a bridge at Pin 3-4 on the back. USB/EAR Board done under the HF modules
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130610_231600.jpg" title="" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130610_231600-150x150.jpg" class="attachment-thumbnail" alt="DSC Connector: GND, PPM, Bridge (PIN 3+4),Switchable +5V"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				DSC Connector: GND, PPM, Bridge (PIN 3+4),Switchable +5V
+				</dd></dl><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130610_230902.jpg" title="Bind Button, Tri-State Selection (X10EMTX | OFF | X1TX0), Arduino LED" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130610_230902-150x150.jpg" class="attachment-thumbnail" alt="Bind Button, Tri-State Selection (X10EMTX | OFF | X1TX0), Arduino LED"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Bind Button, Tri-State Selection (X10EMTX | OFF | X1TX0), Arduino LED
+				</dd></dl><br style="clear: both"><dl class="gallery-item">
+			<dt class="gallery-icon">
+				<a href="http://makeithappend.org/wp-content/uploads/2013/05/IMG_20130610_231453.jpg" title="Take a look behind" rel="lightbox[679]"><img width="150" height="150" src="./PPM Spektrum Arduino Box_files/IMG_20130610_231453-150x150.jpg" class="attachment-thumbnail" alt="Take a look behind"></a>
+			</dt>
+				<dd class="wp-caption-text gallery-caption">
+				Arduino LED, Tri-State Selection (X10EMTX | OFF | X1TX0), Bind Button
+				</dd></dl>
+			<br style="clear: both;">
+		</div>
+
+<p>&nbsp;</p>
+<p><strong><span style="text-decoration: underline;">Blade mCPX V2 with the Blade mQX X10EMTX Module:</span></strong></p>
+<p>The X10EMTX is a <strong>LOW Range 6ch transmitter</strong>&nbsp;board from the Blade MLP4DSM Transmitter (tested with an AR6210 Spektrum 6-Kanal Full Range Receiver DSM X and a servo on AUX1/2 – channel 5/6 ). So you can use it also with the mCPX V2 Helicopter. How to use it:&nbsp;First create a new Heli Model&nbsp;<strong>(Mode 2)</strong>&nbsp;for your Graupner RC and exchange Ch1 &lt;=&gt; CH6. Then&nbsp;<strong>hold the Gas Pedal to the down right</strong>&nbsp;and press the bind button short… wait for the blue LED of the copter. Ready to fly!</p>
+<p>&nbsp;</p>
+<p><strong><span style="text-decoration: underline;">Blade mCPX V2 with the Spektrum DX6i/DX4e X1TX0 Module (AMTX11):</span></strong></p>
+<p>The X1TX0 is a <strong>HIGH Range transmitter</strong> board from the Spektrum DX6i/DX4e Transmitter. How to use it: First create a new Heli Model <strong>(Mode 2)</strong> for your Graupner RC and exchange Ch1 &lt;=&gt; CH6. Then <strong>hold the Gas Pedal to the down right</strong> and press the bind button short… wait for the blue LED of the copter. Ready to fly!</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><strong>Graupner MX-12 Hott Settings for the Blade mCPX V2 Helicopter</strong></span></p>
+<p><span style="text-decoration: underline;"><br>
+Servo-Settings:<br>
+</span><br>
+S6 =&gt; +100 100% 100%</p>
+<p><span style="text-decoration: underline;"><br>
+Dual Rate:</span></p>
+<p>Roll: 45% (Acro 3D: 100%), Switch -<br>
+Nick: 45% (Acro 3D: 100%), Switch -<br>
+Heck: 30% (Acro 3D: 100%), Switch -</p>
+<p><span style="text-decoration: underline;"><br>
+Base Settings:</span></p>
+<p>Mode: 2<br>
+Swash-Type: 1 Servo<br>
+Motor-Stop-100%+150%: Switch 5<br>
+Phase 2: Acro 3D, Switch 3<br>
+Autorotation: Switch 5<br>
+Receiver Out: Exchange Ch1 &lt;=&gt; CH6</p>
+<p><span style="text-decoration: underline;"><br>
+Geber Settings:</span></p>
+<p>Gyr: Poti 7 (Gyro)<br>
+Gas: Switch 3, +100% +125%<br>
+Lim: Poti 8 (Gas Limiter)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="wpfilebase-attachment">
+ <div class="wpfilebase-fileicon"><a href="javascript:;" title="Download Arduino Graupner Spektrum Sketches (V2)"><img align="middle" src="./PPM Spektrum Arduino Box_files/archive.png" alt="Arduino Graupner Spektrum Sketches (V2)"></a></div>
+ <div class="wpfilebase-rightcol">
+  <div class="wpfilebase-filetitle">
+<br>
+   <a href="javascript:;" title="Download Arduino Graupner Spektrum Sketches (V2)">Arduino Graupner Spektrum Sketches (V2)</a><br>
+   Arduino_Sketches.zip<br>
+   
+   
+  </div>
+  
+  <div class="wpfilebase-filedetails" id="wpfilebase-filedetails1" style="display: none;">
+  <br>
+  <p></p>
+  <table border="0">
+   <tbody><tr><td><strong>Languages:</strong></td><td>English, Deutsch</td></tr>
+   <tr><td><strong>Author:</strong></td><td>Matthias Lorenz</td></tr>
+   <tr><td><strong>Platforms:</strong></td><td>Arduino</td></tr>
+   
+   
+   <tr><td><strong>License:</strong></td><td>Freeware</td></tr>
+   <tr><td><strong>Date:</strong></td><td>28/05/2013</td></tr>
+   
+  </tbody></table>
+  </div>
+ </div>
+ <div class="wpfilebase-fileinfo">
+  9.1 KiB<br>
+  353 Downloads<br>
+  <a href="http://makeithappend.org/archives/679#" onclick="return wpfilebase_filedetails(1);">Details...</a>
+ </div>
+ <div style="clear: both;"></div>
+</div>
+<div class="wpfilebase-attachment">
+ <div class="wpfilebase-fileicon"><a href="javascript:;" title="Download MX12Hott MCPX V2 DSC Settings (V2)"><img align="middle" src="./PPM Spektrum Arduino Box_files/default.png" alt="MX12Hott MCPX V2 DSC Settings (V2)"></a></div>
+ <div class="wpfilebase-rightcol">
+  <div class="wpfilebase-filetitle">
+<br>
+   <a href="javascript:;" title="Download MX12Hott MCPX V2 DSC Settings (V2)">MX12Hott MCPX V2 DSC Settings (V2)</a><br>
+   hMCPX DSC.mdl<br>
+   Version: 1<br>
+   
+  </div>
+  
+  <div class="wpfilebase-filedetails" id="wpfilebase-filedetails2" style="display: none;">
+  <br>
+  <p></p>
+  <table border="0">
+   
+   <tbody><tr><td><strong>Author:</strong></td><td>Matthias Lorenz</td></tr>
+   
+   
+   
+   <tr><td><strong>License:</strong></td><td>Freeware</td></tr>
+   <tr><td><strong>Date:</strong></td><td>07/06/2013</td></tr>
+   
+  </tbody></table>
+  </div>
+ </div>
+ <div class="wpfilebase-fileinfo">
+  8.0 KiB<br>
+  244 Downloads<br>
+  <a href="http://makeithappend.org/archives/679#" onclick="return wpfilebase_filedetails(2);">Details...</a>
+ </div>
+ <div style="clear: both;"></div>
+</div>
+			</div><!-- .entry-content -->
+    
+    <footer class="entry-meta mobile-meta">
+					
+						<span class="tag-links">
+				Tagged <a href="http://makeithappend.org/archives/tag/12" rel="tag">12</a>, <a href="http://makeithappend.org/archives/tag/16" rel="tag">16</a>, <a href="http://makeithappend.org/archives/tag/20" rel="tag">20</a>, <a href="http://makeithappend.org/archives/tag/amtx11" rel="tag">amtx11</a>, <a href="http://makeithappend.org/archives/tag/beast" rel="tag">Beast</a>, <a href="http://makeithappend.org/archives/tag/box" rel="tag">box</a>, <a href="http://makeithappend.org/archives/tag/dx6" rel="tag">dx6</a>, <a href="http://makeithappend.org/archives/tag/dx7" rel="tag">dx7</a>, <a href="http://makeithappend.org/archives/tag/dx8" rel="tag">dx8</a>, <a href="http://makeithappend.org/archives/tag/frsky" rel="tag">frsky</a>, <a href="http://makeithappend.org/archives/tag/futaba" rel="tag">futaba</a>, <a href="http://makeithappend.org/archives/tag/graupner" rel="tag">graupner</a>, <a href="http://makeithappend.org/archives/tag/mcpx" rel="tag">mCPX</a>, <a href="http://makeithappend.org/archives/tag/mlp4dsm" rel="tag">MLP4DSM</a>, <a href="http://makeithappend.org/archives/tag/modul" rel="tag">modul</a>, <a href="http://makeithappend.org/archives/tag/mqx" rel="tag">mQX</a>, <a href="http://makeithappend.org/archives/tag/mtx" rel="tag">mtx</a>, <a href="http://makeithappend.org/archives/tag/mx" rel="tag">mx</a>, <a href="http://makeithappend.org/archives/tag/ppm" rel="tag">ppm</a>, <a href="http://makeithappend.org/archives/tag/spektrum" rel="tag">spektrum</a>, <a href="http://makeithappend.org/archives/tag/x10emtx" rel="tag">x10emtx</a>, <a href="http://makeithappend.org/archives/tag/x1tx0" rel="tag">x1tx0</a>, <a href="http://makeithappend.org/archives/tag/x1txn" rel="tag">x1txn</a>			</span>
+			<span class="sep"> | </span>
+					
+				<span class="comments-link"><a href="http://makeithappend.org/archives/679#comments" title="Comment on PPM/Spektrum Arduino R/C Transmitter Box">13 Comments</a></span>
+		<span class="sep"> | </span>
+		
+			</footer><!-- #entry-meta -->
+
+		<nav id="nav-below">
+		<h1 class="assistive-text section-heading">Post navigation</h1>
+
+	
+		<div class="nav-previous"><a href="http://makeithappend.org/archives/631" rel="prev"><span class="meta-nav">← Previous</span></a></div>		<div class="nav-next"><a href="http://makeithappend.org/archives/926" rel="next"><span class="meta-nav">Next →</span></a></div>
+	
+	</nav><!-- #nav-below -->
+	</article><!-- #post-679 -->
+
+
+										<div class="grnbar"></div>
+								<div id="comments-title">
+		<h3>13 Comments</h3> on “<span>PPM/Spektrum Arduino R/C Transmitter Box</span>”    </div>
+        
+	<div id="comments" class="clearfix">
+	
+	
+	    	<div id="comments-title-mobile">
+			13 Comments on “<span>PPM/Spektrum Arduino R/C Transmitter Box</span>”        </div>
+
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-100">
+		<article id="comment-100">
+			<footer class="clearfix comment-head">
+				<div class="comment-author vcard">
+										<cite class="fn">Robert</cite>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://makeithappend.org/archives/679#comment-100"><time pubdate="" datetime="2013-09-20T22:46:22+00:00">
+					20/09/2013 at 22:46 <span class="bsep">•</span> 					</time></a>
+					                    				</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Ich hatte mich verschrieben, ich meinte 131063. Nächste Woche habe ich Zugang zu einem RS2332 Debugger und hoffe damit die genaue Frequenz zu finden.</p>
+</div>
+
+		</article><!-- #comment-## -->
+
+	</li>
+	<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-99">
+		<article id="comment-99">
+			<footer class="clearfix comment-head">
+				<div class="comment-author vcard">
+										<cite class="fn">Matthias</cite>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://makeithappend.org/archives/679#comment-99"><time pubdate="" datetime="2013-09-20T21:23:31+00:00">
+					20/09/2013 at 21:23 <span class="bsep">•</span> 					</time></a>
+					                    				</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Danke <img src="./PPM Spektrum Arduino Box_files/icon_smile.gif" alt=":)" class="wp-smiley">  Ehrlich gesagt, ich weiss es nicht. Ich habe mich mit den Chips nie auseinandergesetzt. Ich programmiere nur ein bisschen <img src="./PPM Spektrum Arduino Box_files/icon_smile.gif" alt=":)" class="wp-smiley"> </p>
+</div>
+
+		</article><!-- #comment-## -->
+
+	</li>
+	<li class="comment even thread-even depth-1" id="li-comment-98">
+		<article id="comment-98">
+			<footer class="clearfix comment-head">
+				<div class="comment-author vcard">
+										<cite class="fn">Robert</cite>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://makeithappend.org/archives/679#comment-98"><time pubdate="" datetime="2013-09-20T21:09:39+00:00">
+					20/09/2013 at 21:09 <span class="bsep">•</span> 					</time></a>
+					                    				</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Hallo, tolle Seite und genau das was ich such <img src="./PPM Spektrum Arduino Box_files/icon_smile.gif" alt=":-)" class="wp-smiley">  In der Funke ist ein Atmega88 – 20AU verbaut der mit 4,194 MHz betrieben wird. Nach meinen Berechnungen kann der nur mit 131006 Baud arbeiten. Das ist der Wert den ich mit dem Datenblatt von Atmel ausgerechnet habe.<br>
+Die 131578 so wie ich das verstehe kann der Atmel die 131578 gar nicht machen. Egal in welchem Mode.</p>
+<p>Siehst du das auch so oder liege ich falsch?</p>
+</div>
+
+		</article><!-- #comment-## -->
+
+	</li>
+	<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-91">
+		<article id="comment-91">
+			<footer class="clearfix comment-head">
+				<div class="comment-author vcard">
+										<cite class="fn">Matthias</cite>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://makeithappend.org/archives/679#comment-91"><time pubdate="" datetime="2013-08-25T15:40:33+00:00">
+					25/08/2013 at 15:40 <span class="bsep">•</span> 					</time></a>
+					                    				</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Beim X1TXN B2 liegt es wohl daran, dass es mehr als 6 Kanäle unterstützt und damit ein anderes Protokoll nutzt. Die Kanäle werden in 2 Sequenzen übertragen und nicht wie bei den 6-Kanal Modulen nur in einer Sequenz. <a href="http://openrcforums.com/forum/viewtopic.php?f=55&t=625">http://openrcforums.com/forum/viewtopic.php?f=55&amp;t=625</a></p>
+</div>
+
+		</article><!-- #comment-## -->
+
+	</li>
+	<li class="comment even thread-even depth-1" id="li-comment-90">
+		<article id="comment-90">
+			<footer class="clearfix comment-head">
+				<div class="comment-author vcard">
+										<cite class="fn">Rene Frantz</cite>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://makeithappend.org/archives/679#comment-90"><time pubdate="" datetime="2013-08-25T09:25:22+00:00">
+					25/08/2013 at 09:25 <span class="bsep">•</span> 					</time></a>
+					                    				</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Hallo Matthias,</p>
+<p>super arbeit bin fast begeistert. Habe mir beide Boards gebaut.<br>
+Leider läuft das Arduino Micro nicht wenn im Sender ein Lipoakku ist.<br>
+Dies zur Info.<br>
+Frage gibt es eine Lösung für das X1TXN B2 Modul</p>
+</div>
+
+		</article><!-- #comment-## -->
+
+	</li>
+	<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-83">
+		<article id="comment-83">
+			<footer class="clearfix comment-head">
+				<div class="comment-author vcard">
+										<cite class="fn">Matthias</cite>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://makeithappend.org/archives/679#comment-83"><time pubdate="" datetime="2013-08-17T10:44:43+00:00">
+					17/08/2013 at 10:44 <span class="bsep">•</span> 					</time></a>
+					                    				</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Ganz einfach, der Arduino Micro arbeitet mit 16 Mhz anstatt mit 8 Mhz. Da kann man dann andere Baudraten einstellen und dann laufen auch die problematischen Module.</p>
+<p>Den Arduino Pro Mini 16 Mhz kann man nicht verwenden, weil dann die 3.3V fehlen (der hat nur 5V).</p>
+<p>Die 2 Sendemodule habe ich eingebaut, damit ich von Short-Range (Bananen-Modul) auf Long-Range (DX4i/DX5) umschalten kann. So kann ich bei kleinen Helis die keine grosse Reichweite benötigen auf den Short-Range Sender umschalten (weniger Sendeleistung, und somit auch weniger Belastung für den Körper). Für Flugzeuge schalte ich dann auf den Long-Range Sender. Fliege ich Flugzeuge mit dem originalen Sender, schliesse ich eine externe Senderantenne an, die  die Sendeleistung etwas reduziert und die ich im Abstand von ca. 5 Metern aufstelle. Alles, damit ich den “Sendemast” (2.4Ghz) nicht direkt an meinem Körper trage.</p>
+<p>Bei den DX4/5 Modulen ist es nicht so tragisch, solange man nicht auf den Amerika-Mode umschaltet (mache ich in meinem Script nicht). Der Amerika-Sende-Mode sendet sehr starke Signale. Das kann man schön mit dem Messgerät HF35C messen.</p>
+</div>
+
+		</article><!-- #comment-## -->
+
+	</li>
+	<li class="comment even thread-even depth-1" id="li-comment-81">
+		<article id="comment-81">
+			<footer class="clearfix comment-head">
+				<div class="comment-author vcard">
+										<cite class="fn">Klaus</cite>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://makeithappend.org/archives/679#comment-81"><time pubdate="" datetime="2013-08-17T09:42:58+00:00">
+					17/08/2013 at 09:42 <span class="bsep">•</span> 					</time></a>
+					                    				</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Hallo Matthias,<br>
+bin immer noch am tüfteln und habe mittlerweile auch festgestellt, das manche X10EMTX Module aus dem “Bananensender” sehr schlecht oder gar nicht funktionieren. (in Verbindung mit Arduino pro mini 3,3 /8MHz)<br>
+Das liegt, wie Du sagst, an der falschen Baud Rate.von 125000.<br>
+Wieso soll es dann mit dem Ardu Micro funktionieren?<br>
+Kann man die Baud Rate nicht einfach im Sketch ändern?<br>
+Und warum hast Du bei Dir zwei Sendemodule eingebaut (umschaltbar)<br>
+Außerdem könnte man in dem Sketch ein Channel-Mapping einbauen,<br>
+dann könnte man die Kanäle auch für andere Anlagen anpassen.</p>
+<p>Viele liebe Grüße<br>
+Klaus</p>
+</div>
+
+		</article><!-- #comment-## -->
+
+	</li>
+	<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-67">
+		<article id="comment-67">
+			<footer class="clearfix comment-head">
+				<div class="comment-author vcard">
+										<cite class="fn">Matthias</cite>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://makeithappend.org/archives/679#comment-67"><time pubdate="" datetime="2013-07-30T20:22:24+00:00">
+					30/07/2013 at 20:22 <span class="bsep">•</span> 					</time></a>
+					                    				</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Danke, freut mich das es ein wenig hilft. Die DS.store ist eine Mac Datei, diese hat keinerlei Bedeutung. Die DSC-Setting Datei ist für die Graupner MX-12 Hotts Fernsteuerung. Sie bietet die Settings um sofort mit dem MCPX losfliegen zu können. Das erspart die Einstellungen selbst vornehmen zu müssen.</p>
+</div>
+
+		</article><!-- #comment-## -->
+
+	</li>
+	<li class="comment even thread-even depth-1" id="li-comment-66">
+		<article id="comment-66">
+			<footer class="clearfix comment-head">
+				<div class="comment-author vcard">
+										<cite class="fn">Klaus</cite>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://makeithappend.org/archives/679#comment-66"><time pubdate="" datetime="2013-07-30T17:18:07+00:00">
+					30/07/2013 at 17:18 <span class="bsep">•</span> 					</time></a>
+					                    				</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Hallo Matthias,<br>
+toll was Du hier auf die Beine gestellt hast. Beschäftige mich gerade mit dem Nachbau, habe aber noch eine Frage: Den Sketch auf den Ardo laden ist kein Problem, aber was ist die Datei bei dem Sketch – DS.Store?<br>
+Und wozu ist der 2. Download unter dem Sketch DSC-Setting (mdl. Datei)</p>
+<p>Mein mCPXv.2 und ich würden uns über die Lösungen sehr freuen</p>
+<p>Alles Gute aus Garbsen<br>
+Klaus</p>
+</div>
+
+		</article><!-- #comment-## -->
+
+	</li>
+	<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-64">
+		<article id="comment-64">
+			<footer class="clearfix comment-head">
+				<div class="comment-author vcard">
+										<cite class="fn">Matthias</cite>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://makeithappend.org/archives/679#comment-64"><time pubdate="" datetime="2013-07-28T00:27:14+00:00">
+					28/07/2013 at 00:27 <span class="bsep">•</span> 					</time></a>
+					                    				</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Yes, hold down right and then press the bind button (short). After a few seconds release the Gad Pedal stick to the center position.</p>
+</div>
+
+		</article><!-- #comment-## -->
+
+	</li>
+	<li class="comment even thread-even depth-1" id="li-comment-63">
+		<article id="comment-63">
+			<footer class="clearfix comment-head">
+				<div class="comment-author vcard">
+										<cite class="fn">Robert Høyland</cite>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://makeithappend.org/archives/679#comment-63"><time pubdate="" datetime="2013-07-28T00:23:13+00:00">
+					28/07/2013 at 00:23 <span class="bsep">•</span> 					</time></a>
+					                    				</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Hi<br>
+I almost get this working. I managed to bind to my mCX v2 once and then it was flying, only rudder was not working. I suppose this is solved by some channelmapping in my transmitter.</p>
+<p>But, I do not understand your binding procedure. You write “Then hold the Gas Pedal to the down right and press the bind button short… wait for the blue LED of the copter. Ready to fly!”<br>
+What do you actually mean?</p>
+</div>
+
+		</article><!-- #comment-## -->
+
+	</li>
+	<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-56">
+		<article id="comment-56">
+			<footer class="clearfix comment-head">
+				<div class="comment-author vcard">
+										<cite class="fn">Matthias</cite>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://makeithappend.org/archives/679#comment-56"><time pubdate="" datetime="2013-07-21T15:29:22+00:00">
+					21/07/2013 at 15:29 <span class="bsep">•</span> 					</time></a>
+					                    				</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>I dont know these devices, so I can not help you.</p>
+</div>
+
+		</article><!-- #comment-## -->
+
+	</li>
+	<li class="comment even thread-even depth-1" id="li-comment-55">
+		<article id="comment-55">
+			<footer class="clearfix comment-head">
+				<div class="comment-author vcard">
+										<cite class="fn">Robert Høyland</cite>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://makeithappend.org/archives/679#comment-55"><time pubdate="" datetime="2013-07-21T11:25:30+00:00">
+					21/07/2013 at 11:25 <span class="bsep">•</span> 					</time></a>
+					                    				</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>I’m looking for a solution to use my Jeti DS-16 with the Blade 130X<br>
+Do you think it would work using the RSAT2 receiver from Jeti and connect the PPM output from RSat2 to your solution?</p>
+</div>
+
+		</article><!-- #comment-## -->
+
+	</li>
+		</ol>
+
+		
+	
+	
+									<div id="respond">
+				<h3 id="reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://makeithappend.org/archives/679#respond" style="display:none;">Cancel reply</a></small></h3>
+									<p class="must-log-in">You must be <a href="http://makeithappend.org/wp-login.php?redirect_to=http%3A%2F%2Fmakeithappend.org%2Farchives%2F679">logged in</a> to post a comment.</p>												</div><!-- #respond -->
+						    
+
+</div><!-- #comments -->
+<div class="clearfix"></div>
+			
+        </div> <!-- end #main -->
+
+        		<div class="clearfix"></div>
+		<div id="sidebar" class="widget-area clearfix" role="complementary">
+
+			<aside id="wpfb_filelistwidget-2" class="widget widget_wpfb_filelistwidget"><div class="widget-title">Top Downloads</div><ul><li><a href="javascript:;">Arduino Graupner Spektrum Sketches (V2)</a> (353)</li><li><a href="javascript:;">MacAntiHum</a> (262)</li><li><a href="javascript:;">MX12Hott MCPX V2 DSC Settings (V2)</a> (244)</li><li><a href="javascript:;">KeyboardMapper V5.3</a> (186)</li><li><a href="javascript:;">VPNRouter Tomato V1.1</a> (109)</li><li><a href="javascript:;" wpfbfid="9">RasPiFlasher v1.3</a> (51)</li><li><a href="javascript:;">IPLogger</a> (39)</li><li><a href="javascript:;" wpfbfid="12">TimeLapse Recorder v1.2</a> (14)</li><li><a href="javascript:;">CodeFormatter</a> (14)</li><li><a href="javascript:;">UDFlasher</a> (11)</li></ul></aside><!--WP Widget Cache 0.26 Begin -->
+<!--Cache statpressvtopposts for 3600 second(s)-->
+<aside id="statpressvtopposts" class="widget StatPressV_Widget_TopPosts"><div class="widget-title">Top Posts</div>
+<ul>
+<li><a href="http://makeithappend.org/technews/">[Page]: Tech News (RSS)</a> (159)</li><li><a href="http://makeithappend.org/de/technews/apple-news/">apple-news</a> (64)</li><li><a href="http://makeithappend.org/de/technews/robot-news/">robot-news</a> (23)</li><li><a href="http://makeithappend.org/contact/">[Page]: Contact</a> (7)</li><li><a href="http://makeithappend.org/tech-world/">[Page]: TECH MEDIA</a> (2)</li></ul>
+</aside><!--WP Widget Cache End -->
+<!--WP Widget Cache 0.26 Begin -->
+<!--Cache statpressv for 3600 second(s)-->
+<aside id="statpressv" class="widget StatPressV_Widget"><div class="widget-title">Stats</div><ul>
+<li>Total Page Views: 51857</li><li>Total Visitors: 8583</li>
+<li>To Browser: Safari</li>
+<li>Top OS: Android</li>
+</ul></aside><!--WP Widget Cache End -->
+<aside id="meta-2" class="widget widget_meta"><div class="widget-title">Site Menu</div>			<ul>
+			<li><a href="http://makeithappend.org/wp-login.php?action=register">Register</a></li>			<li><a href="http://makeithappend.org/wp-login.php">Log in</a></li>
+			<li><a href="http://makeithappend.org/feed" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://makeithappend.org/comments/feed" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			
+						</ul>
+</aside>		</div>
+		<!-- #sidebar .widget-area -->
+    </div> <!-- end #content -->
+        
+	<footer id="colophon" role="contentinfo">
+		<div id="site-generator">
+
+			© Life With Technology          
+            
+		</div>
+	</footer><!-- #colophon -->
+</div><!-- #container -->
+
+<script type="text/javascript" src="./PPM Spektrum Arduino Box_files/common.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+wpfbConf={"ql":true,"hl":1,"pl":0,"hu":"http:\/\/makeithappend.org\/","db":"download","fb":"http:\/\/makeithappend.org\/archives\/679","cm":0,"ajurl":"http:\/\/makeithappend.org\/wp-content\/plugins\/wp-filebase\/wpfb-ajax.php"};function wpfb_ondl(file_id,file_url,file_path){ if(typeof pageTracker == 'object') {
+	pageTracker._trackPageview(file_url); // new google analytics tracker
+} else if(typeof urchinTracker == 'function') {	
+	urchinTracker(file_url); // old google analytics tracker
+} }
+//]]>
+</script>
+<script type="text/javascript" src="./PPM Spektrum Arduino Box_files/jquery.touchwipe.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var JQLBSettings = {"showInfo":"1","fitToScreen":"1","resizeSpeed":"400","displayDownloadLink":"0","navbarOnTop":"0","resizeCenter":"","marginSize":"100","linkTarget":"_self","slideshowSpeed":"4000","help":"","prevLinkTitle":"previous image","nextLinkTitle":"next image","closeTitle":"close image gallery","image":"Image ","of":" of ","download":"Download","pause":"(pause slideshow)","play":"(play slideshow)"};
+var JQLBSettings = {"showInfo":"1","fitToScreen":"1","resizeSpeed":"400","displayDownloadLink":"0","navbarOnTop":"0","resizeCenter":"","marginSize":"100","linkTarget":"_self","slideshowSpeed":"4000","help":"","prevLinkTitle":"previous image","nextLinkTitle":"next image","closeTitle":"close image gallery","image":"Image ","of":" of ","download":"Download","pause":"(pause slideshow)","play":"(play slideshow)"};
+var JQLBSettings = {"showInfo":"1","fitToScreen":"1","resizeSpeed":"400","displayDownloadLink":"0","navbarOnTop":"0","resizeCenter":"","marginSize":"100","linkTarget":"_self","slideshowSpeed":"4000","help":"","prevLinkTitle":"previous image","nextLinkTitle":"next image","closeTitle":"close image gallery","image":"Image ","of":" of ","download":"Download","pause":"(pause slideshow)","play":"(play slideshow)"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./PPM Spektrum Arduino Box_files/jquery.lightbox.min.js"></script>
+
+
+
+<!-- Dynamic page generated in 0.875 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2014-07-27 09:53:29 -->
+
+<!-- Compression = gzip --></body></html>

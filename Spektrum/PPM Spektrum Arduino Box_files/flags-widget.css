@@ -1,0 +1,7 @@
+.flag-icons-outer {
+	position: relative;
+}
+.flag-icons-inner {
+	position: absolute;
+	z-index: 10000 !important;
+}
