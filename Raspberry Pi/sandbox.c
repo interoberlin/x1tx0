@@ -1,16 +1,26 @@
 #include <stdio.h>
 #include <wiringPi.h>
 
+#define CLK 18
+
 int main() {
     wiringPiSetupGpio();
 
-    pinMode(23, OUTPUT);
+    pinMode(CLK, PWM_OUTPUT);
 
+    // http://raspberrypi.stackexchange.com/questions/4906/control-hardware-pwm-frequency
+    pwmSetMode(PWM_MODE_MS);
+    pwmSetClock(4095);
+    int range = 100;
+    pwmSetRange(range);
+
+    pwmWrite(CLK, 0);
+    int d = 0;
     while(1)
     {
-        digitalWrite(23, HIGH);
-        delay(1);
-        digitalWrite(23, LOW);
-        delay(2);
+        pwmWrite(CLK, d++);
+        d %= range;
+        delay(100);
     }
+    pwmWrite(CLK, 0);
 }
