@@ -5,6 +5,10 @@ https://projects.drogon.net/raspberry-pi/wiringpi/functions/
 */
 #include <wiringPi.h>
 
+#define SIG 23
+#define RID 24
+#define CLK 25
+
 void resetPins()
 {
     digitalWrite(SIG, LOW);

@@ -1,3 +1,8 @@
+*.c~
+*.o
+dsm2
+sandbox
+
 *.py[cod]
 
 # C extensions
