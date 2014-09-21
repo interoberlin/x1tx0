@@ -50,16 +50,22 @@ void setClock()
     pwmWrite(CLK, 4);
 }
 
-void RID_interrupt()
+void RID_ISR()
 {
+    digitalWrite(RID, HIGH);
+    delayMicroseconds(2); 
+    digitalWrite(RID, LOW);
+    delayMicroseconds(1); 
+
     // transmit 8 bytes
     for (int i=0; i<8; i++) // i in [0;7]
     {
+
         delayMicroseconds(4);
         // cache to separate variable for faster access
         int b = RemoteControlID[i]; 
         // all 8 bits: bitmask from highest bit to lowest
-        for (int j=128; j>=1; j>>1)
+/*        for (int j=128; j>=1; j>>1)
         {
             // is this bit set ?
             if (b & j > 0)
@@ -74,16 +80,19 @@ void RID_interrupt()
                 digitalWrite(RID, LOW);
                 delayMicroseconds(2); 
             }
-        }
+        }*/
+        
     }
 }
 
-void SIG_interrupt()
+void SIG_ISR()
 {
 }
 
 void attachInterruptHandlers()
 {
+    wiringPiISR(RID_IRQ, INT_EDGE_RISING, RID_ISR);
+    wiringPiISR(SIG_IRQ, INT_EDGE_RISING, SIG_ISR);
 }
 
 int main()

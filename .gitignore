@@ -1,5 +1,6 @@
 *.c~
 *.o
+dsm
 dsm2
 sandbox
 
