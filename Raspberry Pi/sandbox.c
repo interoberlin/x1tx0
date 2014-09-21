@@ -4,7 +4,8 @@
 #define CLK 18
 #define RID 23
 #define SIG 24
-#define IRQ 25
+#define RID_IRQ 27
+#define SIG_IRQ 22
 
 unsigned char senderID[] = {1,1,0,0,2,2,0,0};
 
@@ -16,7 +17,7 @@ int main() {
 
     // http://raspberrypi.stackexchange.com/questions/4906/control-hardware-pwm-frequency
     pwmSetMode(PWM_MODE_MS);
-    pwmSetClock(4095);
+    pwmSetClock(4095); // timer divisor; value between [0..4095]
     int range = 100;
     pwmSetRange(range);
 
