@@ -1,39 +1,61 @@
 #include <stdio.h>
+#include <stdbool.h>
 #include <wiringPi.h>
 
 /*
  * Rasperry Pi pins in use
  *
- * CLK: output pin to output sync pulses, in which data is transferred to DSM module
+ * CLK: output pin to output sync pulses; when low, data is transferred to DSM module
  * RID: output pin to send remote control ID
  * SIG: output pin to send control signals
- * RID_IRQ: input pin connected to CLK, triggers RID interrupt handler
- * SIG IRQ: input pin connected to CLK, triggers SIG interrupt handler
+ * IRQ: using PWM pin, connected to IRQ_RID and IRQ_SIG pins, to make use of interrupts instead of delays
+ * IRQ_RID: input pin connected to CLK, triggers RID interrupt handler
+ * IRQ_SIG: input pin connected to CLK, triggers SIG interrupt handler
  */
-#define CLK 18
+#define CLK 25
 #define RID 23
 #define SIG 24
-#define RID_IRQ 27
-#define SIG_IRQ 22
+#define IRQ 18
+#define IRQ_RID 27
+#define IRQ_SIG 22
 
 unsigned char RemoteControlID[] = {1,1,0,0,2,2,0,0};
+bool RID_bits[64];
 
 void initGPIO()
 {
     wiringPiSetupGpio();
-    pinMode(CLK, PWM_OUTPUT);
+
+    pinMode(CLK, OUTPUT);
     pinMode(RID, OUTPUT);
     pinMode(SIG, OUTPUT);
-    pinMode(RID_IRQ, INPUT);
-    pinMode(SIG_IRQ, INPUT);
+    
+    digitalWrite(CLK, HIGH);
+    digitalWrite(RID, LOW);
+    digitalWrite(SIG, LOW);
+    
+    pinMode(IRQ, PWM_OUTPUT);
+    pinMode(IRQ_RID, INPUT);
+    pinMode(IRQ_SIG, INPUT);
 }
 
-void disableClock()
+void calculateRIDbits()
 {
-    pwmWrite(CLK, 0);
+    // 8 bytes
+    for (int i=0; i<8; i++) // i in [0;7]
+    {
+        int k = i*8;
+        // 8 bits per byte
+        // little endian
+        for (int j=0; j<8; j++)
+        {
+            int bitmask = 128 >> j;
+            RID_bits[k+j] = ((RemoteControlID[i] & bitmask) > 0);
+        }
+    }
 }
 
-void setClock()
+void setInterruptClock()
 {
     /*
      * Clock/interrupt setup
@@ -47,62 +69,71 @@ void setClock()
     pwmSetClock(1024);
     int range = 100;
     pwmSetRange(range);
-    pwmWrite(CLK, 4);
+    pwmWrite(IRQ, 4);
 }
 
-void RID_ISR()
+void transmitRID()
 {
-    digitalWrite(RID, HIGH);
-    delayMicroseconds(2); 
-    digitalWrite(RID, LOW);
-    delayMicroseconds(1); 
+    digitalWrite(CLK, LOW);
+    
+    // zwei direkt aufeinanderfolgende HIGH-LOW in der for-schleife dauern 250ns
+    // digitalWrite(HIGH); takes 80ns
+    // digitalWrite(LOW); takes 40ns
 
-    // transmit 8 bytes
-    for (int i=0; i<8; i++) // i in [0;7]
+    void high()
     {
-
-        delayMicroseconds(4);
-        // cache to separate variable for faster access
-        int b = RemoteControlID[i]; 
-        // all 8 bits: bitmask from highest bit to lowest
-/*        for (int j=128; j>=1; j>>1)
-        {
-            // is this bit set ?
-            if (b & j > 0)
-            {
-                digitalWrite(RID, HIGH);
-                delayMicroseconds(2); 
-                digitalWrite(RID, LOW);
-                delayMicroseconds(1); 
-            } else {
-                digitalWrite(RID, HIGH);
-                delayMicroseconds(1); 
-                digitalWrite(RID, LOW);
-                delayMicroseconds(2); 
-            }
-        }*/
-        
+        digitalWrite(RID, HIGH);
+        delayMicroseconds(2); 
+        digitalWrite(RID, LOW);
+        delayMicroseconds(1); 
     }
+
+    void low()
+    {
+        digitalWrite(RID, HIGH);
+        delayMicroseconds(1); 
+        digitalWrite(RID, LOW);
+        delayMicroseconds(2); 
+    }
+
+    delayMicroseconds(4);
+    for (int i=0; i<64; i++)
+    {
+        if (RID_bits[i])
+            high();
+        else
+            low();
+    }
+  
+    digitalWrite(CLK, HIGH);
 }
 
-void SIG_ISR()
+void transmitSIG()
 {
+    // 4 blocks
+    for (int i=0; i<4; i++) // i in [0;3]
+    {
+        digitalWrite(SIG, HIGH);
+        delayMicroseconds(2); 
+        digitalWrite(SIG, LOW);
+        delayMicroseconds(1); 
+    }
 }
 
 void attachInterruptHandlers()
 {
-    wiringPiISR(RID_IRQ, INT_EDGE_RISING, RID_ISR);
-    wiringPiISR(SIG_IRQ, INT_EDGE_RISING, SIG_ISR);
+    wiringPiISR(IRQ_RID, INT_EDGE_RISING, transmitRID);
+    wiringPiISR(IRQ_SIG, INT_EDGE_RISING, transmitSIG);
 }
-
+ 
 int main()
 {
     initGPIO();
-    disableClock();
+    calculateRIDbits();
+    setInterruptClock();
     attachInterruptHandlers();
-    setClock();
     while (1)
     {
-        delay(1000);
+        delay(3000);
     }
 }

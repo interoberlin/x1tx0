@@ -3,6 +3,7 @@
 dsm
 dsm2
 sandbox
+spi-slave
 
 *.py[cod]
 

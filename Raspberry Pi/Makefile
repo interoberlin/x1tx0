@@ -3,4 +3,6 @@ dsm: dsm.c
 sandbox: sandbox.c
 	#g++ sandbox.c -o sandbox -lwiringPi
 	gcc -std=gnu99 sandbox.c -lwiringPi -o sandbox
+spi-slave: spi-slave.c
+	gcc -std=gnu99 spi-slave.c -lwiringPi -o spi-slave
 
