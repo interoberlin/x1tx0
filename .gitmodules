@@ -1,3 +1,6 @@
 [submodule "Raspberry Pi/wiringPi"]
 	path = Raspberry Pi/wiringPi
 	url = git://git.drogon.net/wiringPi
+[submodule "Raspberry Pi/bcm2835"]
+	path = Raspberry Pi/bcm2835
+	url = git@github.com:matthiasbock/bcm2835.git
