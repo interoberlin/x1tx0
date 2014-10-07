@@ -3,10 +3,10 @@
 #include <bcm2835.h>
 #include <stdio.h>
 
-#define MOSI 10
-#define MISO 9
-#define SCLK 11
-#define SS 8
+#define MOSI 10 // green
+#define MISO 9 
+#define SCLK 11 // brown
+#define SS 8    // blue
 
 void sendWord(w)
 {
@@ -35,20 +35,29 @@ int main(int argc, char **argv)
     bcm2835_spi_chipSelect(BCM2835_SPI_CS0);                      // The default
     bcm2835_spi_setChipSelectPolarity(BCM2835_SPI_CS0, LOW);      // the default
 
-    uint16_t setup = 0x0200;
-    uint16_t steering = 0x0100;
-    uint16_t throttle = 0x1f00;
+    uint16_t setup = 0x0100;
+    
+    // steering interval:
+    // from left = 0x0000 to right = 0x0fff
+    // middle = 0x988
+    uint16_t steering = 0x0988;
+    // throttle interval:
+    // from off = 0x1000 to full power = 0x1fff
+    // minimal:  0x1310
+    // normal:   0x1400
+    // fast:     0x1500
+    // ultrafast:0x1700
+    // insane:   0x1fff
+    uint16_t throttle = 0x1700;
     uint16_t id = 0x182e;
 
     while (1)
     {
-        // Send a byte to the slave and simultaneously read a byte back from the slave
-        // If you tie MISO to MOSI, you should read back what was sent
         sendWord(setup);
         sendWord(steering);
         sendWord(throttle);
         sendWord(id);
-        delay(5);
+        delay(3);
     }
 
     bcm2835_spi_end();
