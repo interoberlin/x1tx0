@@ -1,4 +1,0 @@
-#!/bin/bash
-
-bobo -p 80 -f boat.py
-
