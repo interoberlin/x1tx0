@@ -35,16 +35,16 @@ int main(int argc, char **argv)
     bcm2835_spi_chipSelect(BCM2835_SPI_CS0);                      // The default
     bcm2835_spi_setChipSelectPolarity(BCM2835_SPI_CS0, LOW);      // the default
 
-    uint16_t block1 = 0x0200;
-    uint16_t steering = 0x08b5;
-    uint16_t throttle = 0x187a;
-    uint16_t id = 0x282e;
+    uint16_t setup = 0x0200;
+    uint16_t steering = 0x0100;
+    uint16_t throttle = 0x1f00;
+    uint16_t id = 0x182e;
 
     while (1)
     {
         // Send a byte to the slave and simultaneously read a byte back from the slave
         // If you tie MISO to MOSI, you should read back what was sent
-        sendWord(block1);
+        sendWord(setup);
         sendWord(steering);
         sendWord(throttle);
         sendWord(id);
